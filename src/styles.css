@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme{
+    --color-grayc: #9b9ba0;
+    --color-blackb:  #2a2a30;
+    --color-blacka: #10101a;
+    --color-bluelink: #06628a;
+    --color-bluehover: #06374e;
+}
+
+.custom-dialog-container .mat-dialog-container{
+    width: 850px;
+}
