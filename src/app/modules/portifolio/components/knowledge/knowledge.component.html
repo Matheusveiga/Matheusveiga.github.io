@@ -1,10 +1,21 @@
-<div class="flex flex-col gap-4 justify-center items-center mt-5 font-bold bg-blackb w-screen h-40">
-    <h2 class="text-2xl text-stone-50" >Conhecimentos</h2>
-    <ul class="flex flex-row gap-1 text-stone-50 ">
+<section class="section-card container mx-auto px-4 lg:px-0">
+  <div class="section-header">
+    <h2>Conhecimentos</h2>
+    <p>Ferramentas e tecnologias que aplico em projetos com foco em qualidade, performance e experiência do usuário.</p>
+  </div>
+  <ul class="skills-grid">
         @for(item of arrayKnowledge(); track item){
-            <li>
-                <img class="size-15 bg-blacka p-1 rounded-md"[src]="item.src" [alt]="item.alt" loading="lazy" width="22px" height="24px">
-            </li>
+          <li class="skill-pill">
+            <img [src]="item.src" [alt]="item.alt" loading="lazy" width="32" height="32">
+          </li>
         }
     </ul>
-</div>
+  <div class="knowledge-details">
+    <p><strong>Linguagens:</strong> C# 13, Java 17, Python 3, JavaScript/TypeScript</p>
+    <p><strong>Frameworks:</strong> ASP.NET Core / MVC, Spring Boot, Spring MVC, FastAPI</p>
+    <p><strong>Bancos de dados:</strong> MySQL 8, MongoDB, Supabase (PostgreSQL), PostgreSQL</p>
+    <p><strong>Segurança:</strong> JWT, BCrypt, Rate Limiting, CSRF Protection, OWASP Top 10</p>
+    <p><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, GitHub Actions, Vercel</p>
+    <p><strong>IA & APIs:</strong> Google Gemini 2.0, Groq/LLaMA, Whisper, FatSecret API, OpenFoodFacts</p>
+  </div>
+</section>

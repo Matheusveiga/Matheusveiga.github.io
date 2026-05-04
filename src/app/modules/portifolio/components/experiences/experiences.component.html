@@ -1,35 +1,47 @@
-<div class="mt-10 flex flex-col justify-center items-center ">
-    <h2 class="text-stone-50 font-bold text-2xl ">Ultimas experiencias</h2>
-        <details class="w-110 m-5 md:mt-5 md:w-200 bg-blackb rounded-lg ">
-        <summary id="chevronbtn" class="cursor-pointer w-full md:w-200 md:h-20 p-2 pt-5 bg-indigo-800 rounded-lg flex justify-between items-center">
-            <p class="text-blacka pb-4 m-0 flex flex-col ">
-                <strong>
-                    Técnico de Informática
-                </strong>
-                Flarset PG | 2022 - 2023
-            </p>
-            <span class="pb-2 mr-5">
-                <svg id="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                  </svg>
-            </span>
-            
-        </summary>
-        <article class="h-50 md:h-30  pl-2 pt-4 flex flex-col justify-between items-center">
-            <p class="text-grayc ">
-                Durante meu periodo na Flarset, atuei como Técnico de informática, trabalhei com soluções de pagamento da cielo e outras operadoras, as principais atividades compunham em atimento de ordem de serviços, manutenção do hardware dos equipamentos, manutenção do sotware dos equipamentos, treinamento de clientes e instalação de pinpads em PDVs
-            </p>
-            
-        </article>
-    </details>
-
-    
-</div>
-
-<script>
-    document.getElementById('chevronbtn').addEventListener('click', function() {
-
-        document.getElementById('chevron').classList.toggle('rotate-180')
-    });
-    
-</script>
+<section class="section-card container mx-auto px-4 lg:px-0 experience-card">
+  <div class="section-header">
+    <h2>Experiência profissional</h2>
+    <p>Resumo de experiência, certificações, formação e idiomas dentro dos campos existentes.</p>
+  </div>
+  <details class="experience-details">
+    <summary class="experience-summary">
+      <div>
+        <strong>Técnico de Informática</strong>
+        <p>Flarset PG | Fev 2022 – Fev 2023</p>
+      </div>
+      <span class="experience-chevron" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </span>
+    </summary>
+    <div class="experience-panel">
+      <p>Executei manutenção corretiva e preventiva de hardware/software e configuração de redes, reduzindo o tempo de inatividade por meio de diagnóstico estruturado de falhas. Prestei suporte técnico a usuários internos com foco em agilidade e documentação padronizada.</p>
+    </div>
+  </details>
+  <div class="experience-subsection">
+    <div class="resume-block">
+      <h3>Certificações</h3>
+      <ul>
+        <li><strong>WEX – End to End Engineering</strong></li>
+        <li><strong>DIO</strong> | Ago 2025 – SQL, C#, .NET Framework, MySQL, Git, GitHub, Computação em Nuvem, MongoDB, Docker, Kubernetes, API, Backend</li>
+        <li><strong>GFT Start #7 – Java</strong> – Java, Spring Boot, Spring MVC, POO</li>
+        <li><strong>AWS Educate</strong> – Introduction to Cloud 101</li>
+      </ul>
+    </div>
+    <div class="resume-block">
+      <h3>Formação acadêmica</h3>
+      <ul>
+        <li>Técnico em Desenvolvimento de Sistemas – SENAI | Dez 2025</li>
+        <li>Ensino Médio Técnico – E.E. Aristóteles Ferreira</li>
+      </ul>
+    </div>
+    <div class="resume-block">
+      <h3>Idiomas</h3>
+      <ul>
+        <li>Inglês: Avançado</li>
+        <li>Japonês: Básico</li>
+      </ul>
+    </div>
+  </div>
+</section>

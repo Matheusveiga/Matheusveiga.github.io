@@ -7,7 +7,7 @@ import { Component, signal } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './experiences.component.html',
-  styleUrl: './experiences.component.scss'
+  styleUrls: ['./experiences.component.css']
 })
 export class ExperiencesComponent {
 }

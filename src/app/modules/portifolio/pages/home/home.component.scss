@@ -1,10 +1,14 @@
-:host{
-    section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0;
+:host {
+  display: block;
+}
 
-        text-align: center;
-    }
+:host main {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 0;
+}
+
+:host section {
+  width: 100%;
 }

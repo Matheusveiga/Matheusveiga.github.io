@@ -1,19 +1,17 @@
-<header>
+<header class="dialog-header">
+  <div>
     <h2 mat-dialog-title>{{ getData()?.title }}</h2>
-    <button>
-        <img src="" alt="">
-    </button>
+  </div>
+  <button mat-dialog-close class="dialog-close" aria-label="Fechar">Fechar</button>
 </header>
 
 <mat-dialog-content>
-    <h3>Descrição</h3>
-    <article [innerHTML]="getData()?.description" ></article>
+  <h3>Descrição</h3>
+  <article [innerHTML]="getData()?.description"></article>
 
-    <nav>
-        @for(item of getData()?.links; track item){
-            <a [href]="item.href" target="_blank">
-                {{item.name}}
-            </a>
-        }
-    </nav>
+  <nav class="dialog-links">
+    @for(item of getData()?.links; track item){
+      <a [href]="item.href" target="_blank">{{item.name}}</a>
+    }
+  </nav>
 </mat-dialog-content>

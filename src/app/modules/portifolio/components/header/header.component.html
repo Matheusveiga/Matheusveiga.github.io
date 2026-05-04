@@ -1,57 +1,37 @@
-<header class="bg-indigo-800 flex-col flex items-center justify-center mb-35 gap-5 h-40 ">
-    <img class="rounded-full border-6 border-stone-100 relative -bottom-27 w-35" src="/fotoperfil.jpeg" alt="Foto de perfil" width="130px" height="130px" loading="eager">
-    <p class="text-2xl relative -bottom-27 text-gray-50 font-bold">Matheus Veiga</p>
-
-</header>
-
-<aside class="flex flex-col items-center justify-center">
-    <div class="flex flex-col items-center justify-center gap-2">
-        <p class="text-grayc text-center">Desenvolvedor Full-Stack | Angular | Tailwind | JavaScript | TypeScript | C# | SQL Server</p>
-        <p class="text-grayc text-center">Santos, São Paulo, Brasil</p>
-        <p class="text-grayc text-center">Desenvolvedor Full-Stack a procura de uma oportunidade de começar a carreira</p>
-
-        <nav class="text-stone-50 m-0">
-            <ul class="flex flex-col md:flex-row gap-5 md:gap-8 p-4 w-screen justify-center items-center">
-                <li class="w-full md:w-60 h-18 bg-bluelink hover:bg-bluehover rounded-lg flex items-center justify-center">
-                    <a class="flex flex-row w-full h-full justify-center items-center" href="https://www.linkedin.com/in/matheus-veiga-011566158/" target="_blank">
-                        <img src="/linkedin.png" alt="Linkedin" width="22px" height="22px">
-                        <p class="">LinkedIn</p>
-    
-                    </a>
-                </li>
-                <li class="w-full md:w-60 h-18 bg-indigo-800 hover:bg-indigo-950 rounded-lg flex items-center justify-center">
-                    <a class="flex flex-row w-full h-full justify-center items-center" href="/Profile.pdf" target="_blank">
-                        <p style="color: var(--white);">Download CV</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <section class="flex flex-col md:flex-row w-screen justify-center items-center gap-8">
-            <figure class="w-80 h-20 border-2 border-stone-100 p-2 rounded-lg flex gap-5 m-0">
-                <img class="10" src="/icons8-whatsapp.svg" alt="">
-                <figcaption>
-                    <a class="w-full h-full justify-center items-center" href="https://wa.me/5513978101994" target="_blank">
-                        <strong class="text-indigo-800">
-                            Envie uma mensagem para:
-                        </strong>
-                        <p class="text-grayc">Whatsapp: (13) 97810-1994</p>
-                    </a>
-                </figcaption>
-            </figure>
-            <figure class="w-80 h-20 border-2 border-stone-100 p-2 rounded-lg flex m-0 gap-5">
-                <img class="pl-2"src="icons8-nova-mensagem-48.png" alt="">
-                <figcaption>
-                    <a href="mailto:theus1025@gmail.com" target="_blank">
-                        <strong class="text-indigo-800 pl-2">
-                            Envie uma e-mail para:
-                        </strong>
-                        <p class="text-grayc pl-2">theus1025&#64;gmail.com</p>
-                    </a>
-                </figcaption>
-            </figure>
-        </section>
-        
+<section class="hero-section">
+  <div class="hero-card container mx-auto px-4 lg:px-0">
+    <div class="hero-header">
+      <img class="hero-avatar" src="/fotoperfil.jpeg" alt="Foto de perfil de Matheus Veiga" width="140" height="140" loading="eager">
+      <div class="hero-content">
+        <span class="hero-label">Desenvolvedor Back-end .NET | Java</span>
+        <h1 class="hero-title">Matheus da Silva Salgado Veiga</h1>
+        <p class="hero-subtitle">Desenvolvedor Back-end com foco em C#/.NET e Java/Spring Boot, especializado em construção de APIs REST seguras e escaláveis seguindo princípios SOLID e Clean Architecture.</p>
+        <div class="hero-summary">
+          <p>Experiência comprovada em autenticação JWT, BCrypt, Rate Limiting, Entity Framework Core, MySQL, PostgreSQL e integração com AWS e Supabase.</p>
+          <p>Autor de projetos com orquestração de múltiplos modelos de IA, pipelines em Python/FastAPI e arquiteturas de microsserviços.</p>
+          <p>Inglês Avançado • Santos, SP</p>
+        </div>
+        <div class="hero-actions">
+          <a href="https://github.com/Matheusveiga" target="_blank" class="btn btn-primary">GitHub</a>
+          <a href="https://www.linkedin.com/in/matheus-veiga" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
     </div>
-    
-    
-</aside>
+    <div class="hero-links">
+      <div class="link-card">
+        <img src="/icons8-whatsapp.svg" alt="Whatsapp" width="34" height="34">
+        <div>
+          <strong>Whatsapp</strong>
+          <p>+55 (13) 97810-1994</p>
+        </div>
+      </div>
+      <div class="link-card">
+        <img src="/icons8-nova-mensagem-48.png" alt="E-mail" width="34" height="34">
+        <div>
+          <strong>E-mail</strong>
+          <p>theus1025&#64;gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -11,52 +11,53 @@ import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projec
   standalone: true,
   imports: [MatDialogModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
   #dialog = inject(MatDialog);
   public arrayProjects = signal<IProjects[]>([
     {
       src: 'github.png',
-      alt: 'Teste',
-      title: 'Teste',
+      alt: 'Project image for CaloriesBot',
+      title: 'CaloriesBot',
       width: '200px',
       height: '150px',
-      description: 'Meu Github',
-      links: [{
-        name: 'GitHub',
-        href: 'https://github.com/Matheusveiga'
-      }
+      description: 'Bot nutricional para Telegram com FastAPI, Google Gemini, Groq/LLaMA, Whisper e Supabase.',
+      links: [
+        {
+          name: 'GitHub',
+          href: 'https://github.com/Matheusveiga'
+        }
       ]
     },
     {
       src: 'github.png',
-      alt: 'Teste',
-      title: 'Teste',
-      width: '100px',
-      height: '51px',
-      description: 'Meu Github',
-      links: [{
-        name: 'GitHub',
-        href: 'https://github.com/Matheusveiga'
-      }
+      alt: 'Project image for LH_PET',
+      title: 'LH_PET',
+      width: '200px',
+      height: '150px',
+      description: 'Sistema de gestão veterinária ASP.NET MVC com MySQL, JWT, BCrypt e Serilog.',
+      links: [
+        {
+          name: 'GitHub',
+          href: 'https://github.com/Matheusveiga/LH_PET'
+        }
       ]
     },
     {
       src: 'github.png',
-      alt: 'Teste',
-      title: 'Teste',
-      width: '100px',
-      height: '51px',
-      description: 'Meu Github',
-      links: [{
-        name: 'GitHub',
-        href: 'https://github.com/Matheusveiga'
-      }
+      alt: 'Project image for XDrones',
+      title: 'XDrones',
+      width: '200px',
+      height: '150px',
+      description: 'E-commerce de drones com ASP.NET Core, MySQL, JWT e BCrypt para o TCC do SENAI.',
+      links: [
+        {
+          name: 'GitHub',
+          href: 'https://github.com/ThiagoPinheiro-pnp/XDrones'
+        }
       ]
-    },
-    
-
+    }
   ])
 
   public openDialog(data: IProjects){
