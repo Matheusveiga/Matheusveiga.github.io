@@ -17,7 +17,7 @@ export class ProjectsComponent {
   #dialog = inject(MatDialog);
   public arrayProjects = signal<IProjects[]>([
     {
-      src: 'github.png',
+      src: 'https://via.placeholder.com/200x150/2fbf71/FFFFFF?text=CaloriesBot',
       alt: 'Project image for CaloriesBot',
       title: 'CaloriesBot',
       width: '200px',
@@ -31,7 +31,7 @@ export class ProjectsComponent {
       ]
     },
     {
-      src: 'github.png',
+      src: 'https://via.placeholder.com/200x150/a5f3fc/000000?text=LH_PET',
       alt: 'Project image for LH_PET',
       title: 'LH_PET',
       width: '200px',
@@ -45,7 +45,7 @@ export class ProjectsComponent {
       ]
     },
     {
-      src: 'github.png',
+      src: 'https://via.placeholder.com/200x150/fbbf24/000000?text=XDrones',
       alt: 'Project image for XDrones',
       title: 'XDrones',
       width: '200px',
