@@ -72,6 +72,7 @@ p {
 
 .hero-section {
   display: block;
+  padding-top: 24px;
 }
 
 .hero-card {
