@@ -70,11 +70,17 @@ p {
   margin-top: 32px;
 }
 
+.hero-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 20px 0;
+}
+
 .hero-card {
   position: relative;
   overflow: hidden;
-  border-radius: 33px;
-  padding: 36px 30px 28px;
+  border-radius: 28px;
+  padding: 32px;
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(8, 10, 18, 0.99));
   border: 1px solid rgba(148, 163, 184, 0.12);
 }
